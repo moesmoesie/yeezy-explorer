@@ -9,3 +9,12 @@ def get_web_page_json(url):
         return response.json()
     else:
         return None
+
+def create_url(base, tags):
+    url = base
+    for tag in tags:
+        url += "&"
+        url += tag.name
+        url += "="
+        url += ",".join(tag.values)
+    return url 
