@@ -1,5 +1,5 @@
 from src.models import Shoe
-from src.models import Pagnation
+from src.models import Pagination
 
 def parse_shoe_from_shoe_data(shoe_data):
     return Shoe(
@@ -21,6 +21,6 @@ def parse_pagination_from_page_data(page_data):
     if next_page and "/v3/" in next_page:
         next_page = next_page.replace("/v3/","/")
 
-    return Pagnation(
+    return Pagination(
         next_page = next_page
     )

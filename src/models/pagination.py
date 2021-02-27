@@ -1,4 +1,4 @@
-class Pagnation():
+class Pagination():
     def __init__(self,next_page):
         self.next_page = next_page
 
